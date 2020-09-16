@@ -5,29 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga-Landing Page Project</title>
 
+    <!--I am testing out https://materializecss.com/ as my libary for the first time. Its very limited and so far I dont like it. -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link rel="stylesheet" href="Landing-Page.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
+    
     <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo" style="float: center;">
-          <img src="images/Untitled design.png" class="circle" width="64" height="64">Yogi</a>
+          <a href="#" class="brand-logo" style="center">
+          <img src="images/Untitled design.png" class="circle" width="64" height="64">Yogi Studio</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">Class Schedule</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#yogi-options">Class Schedule</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Pricing</a></li>
           </ul>
         </div>
     </nav>
-
+    <!--top image-->
+   <div class="container">
     <div class="row">
-        <div class="col s12">
-            Large image insert here</div>
-    <!--Classes Card #1-->        
+
+        <div class="col s12 top-image" > 
+        
+            <img class="responsive-img" src="images/yoga-group-3.jpg"  >    
+        </div>
+
+    </div>
+</div>
+    <!--Classes Card #1-->
+    <div class="row" id="yogi-options">       
         <div class="col s4">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
@@ -43,6 +54,7 @@
                 </div>
               </div>
         </div>
+     
         <!--Meet the team card #2-->
         <div class="col s4">
 
@@ -51,12 +63,12 @@
       <img class="activator" src="images/group-yoga-poses.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">About Our Team<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4">About Our Team<i class="material-icons right"></i></span>
       <p><a class="waves-effect waves-light btn">Meet the Team</a></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      <span class="card-title grey-text text-darken-4">Meet Our Team<i class="material-icons right">close</i></span>
+      <p>All of our instructors are very skilled and certified.</p>
     </div>
   </div>
         </div>
@@ -68,7 +80,7 @@
       <img class="activator" src="images/group-yoga-poses.jpg">
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Pricing<i class="material-icons right">more_vert</i></span>
+      <span class="card-title activator grey-text text-darken-4">Pricing<i class="material-icons right"></i></span>
       <p><a class="waves-effect waves-light btn">Explore</a></p>
     </div>
     <div class="card-reveal">
@@ -77,7 +89,38 @@
     </div>
   </div>
         </div>
-      </div>
-    
+    </div> 
+      
+
+      <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Reach Us At </h5>
+              <p class="grey-text text-lighten-4">
+                  <ul> 
+                      <li>address</li>
+                      <li>phone number</li>
+                      <li>email</li>
+                  </ul></p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Join Us!</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Schedule Class</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Aboout Our Team</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2020 Copyright by Carmina Montes
+          <a class="grey-text text-lighten-4 right" href="#!">www.yogistudio.com</a>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
